@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+.bg-primary {
+  background-color: #fafafa !important;
+}
+
+.bg-secondary {
+  background-color: #c7c7c7 !important;
+}
+
+body {
+  font-family: gameFont;
+}
+
+@font-face {
+  font-family: gameFont;
+  src: url(assets/fuentes/MikadoBold_DEMO.otf);
+}

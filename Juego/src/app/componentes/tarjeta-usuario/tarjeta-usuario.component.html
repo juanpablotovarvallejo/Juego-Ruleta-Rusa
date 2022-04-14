@@ -1,0 +1,16 @@
+<div class="card my-3 mx-auto text-white" style="width: 18rem;border: #263238; border-radius: 20px"
+     data-mdb-toggle="animation" data-mdb-animation-start="onLoad" data-mdb-animation-reset="true" data-mdb-animation="slide-out-right"
+     [ngStyle]="{'background-color': color}">
+  <div class="card-body row align-items-center">
+    <div class="col-2 me-2">
+      <nav class="rounded-circle p-1 start"  style="background-color: white;display: inline-block">
+        <img src="{{imagen}}"/></nav>
+    </div>
+    <div class="col-7 text-start">
+      <p class="card-text align-middle" style="display: inline-block"> {{usuario.nombre}}</p>
+    </div>
+    <div class="col-2" *ngIf="!usuario.vivo">
+        <img src="https://img.icons8.com/color/35/000000/skull.png"/>
+    </div>
+  </div>
+</div>

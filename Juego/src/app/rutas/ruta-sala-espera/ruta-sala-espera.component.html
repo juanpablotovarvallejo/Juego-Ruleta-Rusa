@@ -1,0 +1,14 @@
+<div class="my-5 text-center">
+  <h1> <nav class="p-2 rounded-circle" style="background-color: #f9dd41;display: inline-block">
+    <img src="https://img.icons8.com/color/50/000000/gun.png"/></nav>
+    RULETA RUSA BATTLE ROYALE</h1>
+  <h2>Esperando jugadores</h2>
+  <div class="card my-3 mx-auto bg-secondary" style="width: 25rem;border: #263238">
+    <div class="card-body ">
+      <p class="card-text">Jugadores de la sala</p>
+      <app-tarjeta-usuario *ngFor="let usuario of usuarios;let i = index" [usuario]="usuario" [color]="colores[i%6]" [imagen]="imagenes[i%8]"></app-tarjeta-usuario>
+    </div>
+  </div>
+  <button class="btn btn-danger mx-3" (click)="abandonarSala()">Abandonar sala</button>
+  <button class="btn btn-primary mx-3" (click)="jugar()" *ngIf="host">Jugar</button>
+</div>

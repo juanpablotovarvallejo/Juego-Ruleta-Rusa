@@ -1,0 +1,29 @@
+<div class="row my-5 text-center">
+  <h1> <nav class="p-2 rounded-circle" style="background-color: #f9dd41;display: inline-block">
+    <img src="https://img.icons8.com/color/50/000000/gun.png"/></nav>
+    RULETA RUSA BATTLE ROYALE</h1>
+  <p class="mb-4">Seleccione la sala a la que desea unirse</p>
+    <app-tarjeta-sala  class="col-4 text-center" *ngFor="let sala of salas" [salaId]="sala.numero" [color]="sala.color"
+    (click)="setId(sala.numero)">
+    </app-tarjeta-sala>
+</div>
+<div class="modal fade"  id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content" style="border: 0">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Unirse a la sala {{salaId}}</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="mb-3">
+          <label for="recipient-name" class="col-form-label">Ingrese su nombre</label>
+          <input type="text" [(ngModel)]="nombre" class="form-control" id="recipient-name">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+        <button class="btn btn-primary" (click)="continuar()" data-bs-dismiss="modal">Continuar</button>
+      </div>
+    </div>
+  </div>
+</div>
