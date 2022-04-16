@@ -27,7 +27,7 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
     BrowserModule,
     AppRoutingModule,
     SocketIoModule.forRoot({
-      url: 'ws://localhost:8080',
+      url: 'https://websocket-ruleta-rusa.herokuapp.com',
       options: {}
     }),
     FormsModule,

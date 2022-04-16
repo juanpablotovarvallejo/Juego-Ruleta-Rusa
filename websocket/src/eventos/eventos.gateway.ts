@@ -6,11 +6,8 @@ import {
 } from '@nestjs/websockets';
 import { Server, Socket } from 'socket.io';
 
-@WebSocketGateway(8080, {
-  cors: {
-    origin: '*',
-  },
-})
+@WebSocketGateway({cors:true})
+
 export class EventosGateway {
   salas = [[], [], [], [], [], [], [], [], []];
   contadores = [0, 0, 0, 0, 0, 0, 0, 0, 0];
