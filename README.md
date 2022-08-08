@@ -1,6 +1,6 @@
 # Russian Roulette Battle Royale
 
-Russian Roulette Battle Royale using Angular and NestJS. Demo: https://juancho1502011.github.io/Juego-Ruleta-Rusa
+Russian Roulette Battle Royale using Angular and NestJS. Demo: https://juanpablotovarvallejo.github.io/Juego-Ruleta-Rusa
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.4.
 
 
